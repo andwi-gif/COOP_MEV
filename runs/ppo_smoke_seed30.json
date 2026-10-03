@@ -1,0 +1,1819 @@
+{
+  "status": "ppo_development_run_complete",
+  "scope": "single-agent PPO development port, not final COSC723 evaluation",
+  "protocol_id": "v2.09-legacy-symbol-jun27-174p-114r-c6-r3",
+  "evaluation_protocol_id": "cosc723-ppo-only-port-v1",
+  "source_trainer_sha256": "faabb0d29aefdee2c7f8bf263ae8cc56fc043f665484f8196cef651fb8afa855",
+  "source_driver_sha256": "2b8214fd664fe6755ca3a2d549716236fde5927768a6f2589c405683ed862ae6",
+  "runtime_sha256": "81ffe2e9d39b83baf6494edd6dd82631f88ea856751d8279460dc6211373faf7",
+  "driver_sha256": "e96fda5e16ac0a4b4c720c13405d62587dc10868077a8c2b6f23be50cf736f2f",
+  "model_sha256": "1534631a492f8300696df0d6adc32f900272163d5a78db708d57e0ad6655978b",
+  "dataset_hashes": {
+    "100_POOLS_ALL_v2_sushi.com_ethereum_explore_pools_Pools _ Sushi.mhtml": "06c2d2dd7560815b38835420f28b8030e8754568d3d5e6796d950f6d19043ebd",
+    "100_POOLS_ETHEREUM_v2_app.uniswap.org_explore_pools_ethereum.mhtml": "1557fade9731532315639226070f9215ee96bb03c80e26caefe8a7a24efad5f3",
+    "Book1.xlsx": "babe107325838406bd60c0e873588f4c79403977f47e0db8f2358f0ade34bbe0",
+    "token_price_generator.py": "082f67cf996035c1dee01aedef6c540259d3970b1915dbd0d812ebd5da4ee67a",
+    "token_prices_2026-06-27.json": "d237efacf883ef20622c9cc08aeb6433ff525aa663cc1698d2e0109d37d3bd37",
+    "uniswap_v2_and_sushiswap_v2_pools_data.2026-06-27.json": "c623e07836c48b429281ce92bfa1e797ee01f6c372506c70ec059e50dece26da",
+    "uniswap_v2_and_sushiswap_v2_pools_data_generator.py": "62d60e175c8a1bbf2ad4fbaf9926a135eed04ab8e85a953e9900fc954c56619c",
+    "wallet_balance_2026-06-27.1000.json": "5f9240938742fb0efff659e0e325896f4ea3bf12742a1d81de29f7e797a02f78",
+    "wallet_balance_2026-06-27.10000.json": "b8f62a5016083ebc44ae85071bba05dbede8e3a8496fef41948d531f9b1ab4dd",
+    "wallet_balance_2026-06-27.2000.json": "0ee9f1e272ad76e3170a732caf77a4c77a7c175f9f4377f80662d0937f7b3d93",
+    "wallet_balance_2026-06-27.3000.json": "652c49979ea52f464a7e57cc4bd0e8fc58cbf04c9a32435f541b1de77bff7add",
+    "wallet_balance_2026-06-27.4000.json": "a58625f6b0bee3708c7bd86dd015cfea9fbdde1c68a999825f04abc0ee36c200",
+    "wallet_balance_2026-06-27.5000.json": "cb4e0be33c3975f9089248b269298098c35b1dc15027f89e9f42ca4845e79eb8",
+    "wallet_balance_2026-06-27.6000.json": "a717a69588a6bd71986a70d7f62224e968f16aceea475357e8041071de27b395",
+    "wallet_balance_2026-06-27.7000.json": "647696b7c28a14439eeca33e970fa4344341d2e1130ae85175e53a6d18bc982f",
+    "wallet_balance_2026-06-27.8000.json": "f34f66f5b68eea95fb0d90e794565b7b6e57003bbc7eb220d80688a80a8ee558",
+    "wallet_balance_2026-06-27.9000.json": "25eab56a91c49b57a3654f78de50926c9127edbf5f31f8300fc424552f785cb4",
+    "wallet_balance_generator_1K_10K.py": "5c47d2dc237cd6d777a049e98bb4b64cf328cf0a6f3cef31328f12f5885c2f07"
+  },
+  "model_seed": 20,
+  "checkpoint_decisions": 250000,
+  "canonical_settings": 23,
+  "requested_episodes": 1,
+  "scenarios": [
+    {
+      "dimension": "development",
+      "ablation_value": 2000.0,
+      "ablation_label": "2K",
+      "balance_usd": 2000,
+      "c3_liquidity_depth": 1,
+      "gas_multiplier": 1,
+      "c6_latency_budget_seconds": 4.0
+    }
+  ],
+  "episodes": [
+    {
+      "dimension": "development",
+      "ablation_value": 2000.0,
+      "ablation_label": "2K",
+      "balance_usd": 2000,
+      "c3_liquidity_depth": 1,
+      "gas_multiplier": 1,
+      "c6_latency_budget_seconds": 4.0,
+      "seed": 30,
+      "method": "PPO",
+      "episode_valid": true,
+      "simulated_execution": true,
+      "submitted_onchain": false,
+      "profit_usd": 2903.625581631346,
+      "gross_profit_usd": 2908.4719823796777,
+      "gas_charged_usd": 4.84640074833204,
+      "decision_attempts": 805,
+      "executed_transactions": 10,
+      "screened_rejections": 794,
+      "c6_commits_within_budget": 10,
+      "c6_expired_before_commit": true,
+      "terminal_condition": "C6_wall_clock_budget_exhausted",
+      "first_action": [
+        30.0,
+        0.9996636509895325
+      ],
+      "cumulative_decision_time_seconds": 4.004657417535782,
+      "episode_wall_time_seconds": 4.184052512049675,
+      "initial_state_hash": "7aa1de1590722eec71540c22023b64c8d8a2e5042fab1bb0f4fa08b7d14b3090",
+      "final_state_hash": "af26ddc01dc563de646893a35de1b5e5958e40b89fad8a5390197fbbdf57cbe2",
+      "initial_state": {
+        "wallet": {
+          "$PAAL": 0.0,
+          "AAVE": 0.0,
+          "ALCX": 0.0,
+          "AMP": 0.0,
+          "AMPL": 0.0,
+          "ANDY": 0.0,
+          "APU": 0.0,
+          "ASTEROID": 0.0,
+          "ASTO": 0.0,
+          "AUDIO": 0.0,
+          "BANANA": 0.0,
+          "BAND": 0.0,
+          "BANK": 0.0,
+          "BEAM": 0.0,
+          "BICO": 0.0,
+          "BIFI": 0.0,
+          "BTC2X-FLI": 0.0,
+          "C98": 0.0,
+          "CAGA": 0.0,
+          "CAW": 0.0,
+          "CHKN": 0.0,
+          "CIG": 0.0,
+          "COMP": 0.0,
+          "CULT": 0.0,
+          "CVX": 0.0,
+          "DAI": 400.14084957905186,
+          "DDX": 0.0,
+          "DELTA": 0.0,
+          "DG": 0.0,
+          "DIA": 0.0,
+          "DIGG": 0.0,
+          "DOG": 0.0,
+          "DOGEGF": 0.0,
+          "DPI": 0.0,
+          "DSYNC": 0.0,
+          "DUMMY": 0.0,
+          "EETH": 0.0,
+          "ELON": 0.0,
+          "ENS": 0.0,
+          "ETH": 0.2515027288046075,
+          "ETHY": 0.0,
+          "FLOKI": 0.0,
+          "FLUT": 0.0,
+          "FODL": 0.0,
+          "FOUR": 0.0,
+          "FOX": 0.0,
+          "FRAX": 0.0,
+          "FTMX": 0.0,
+          "FTX TOKEN": 0.0,
+          "GCAKE": 0.0,
+          "GEKKO": 0.0,
+          "GME": 0.0,
+          "GOG": 0.0,
+          "GOOCH": 0.0,
+          "GROK": 0.0,
+          "GRT": 0.0,
+          "HERA": 0.0,
+          "HEZ": 0.0,
+          "ICHI": 0.0,
+          "ILV": 0.0,
+          "IMX": 0.0,
+          "IQ": 0.0,
+          "JESUS": 0.0,
+          "JOE": 0.0,
+          "KEKIUS": 0.0,
+          "KIRA": 0.0,
+          "KISHU": 0.0,
+          "KP3R": 0.0,
+          "LADYS": 0.0,
+          "LDO": 0.0,
+          "LFT": 0.0,
+          "LINK": 0.0,
+          "LON": 0.0,
+          "LUSD": 0.0,
+          "M87": 0.0,
+          "MANA": 0.0,
+          "MASK": 0.0,
+          "MEEB": 0.0,
+          "MIC": 0.0,
+          "MKR": 0.0,
+          "MOG": 0.0,
+          "MONGOOSE": 0.0,
+          "MOONCAT": 0.0,
+          "MULTI": 0.0,
+          "MYX": 0.0,
+          "NATI": 0.0,
+          "NEAR": 0.0,
+          "NEIRO": 0.0,
+          "NEWO": 0.0,
+          "NFD": 0.0,
+          "NFTX": 0.0,
+          "NPC": 0.0,
+          "NST": 0.0,
+          "OCEAN": 0.0,
+          "OHM": 0.0,
+          "OIL": 0.0,
+          "OLAS": 0.0,
+          "OMNI": 0.0,
+          "OPAL": 0.0,
+          "PAXG": 0.0,
+          "PEIPEI": 0.0,
+          "PENDLE": 0.0,
+          "PEPE": 0.0,
+          "PEPECOIN": 0.0,
+          "POND": 0.0,
+          "PUPPIES": 0.0,
+          "QRX": 0.0,
+          "QTO": 0.0,
+          "QUARTZ": 0.0,
+          "RAD": 0.0,
+          "RADAR": 0.0,
+          "RAIL": 0.0,
+          "RARE": 0.0,
+          "RENBTC": 0.0,
+          "SAITABIT": 0.0,
+          "SFI": 0.0,
+          "SHIBDOGE": 0.0,
+          "SHX": 0.0,
+          "SNX": 0.0,
+          "SPELL": 0.0,
+          "SPX": 0.0,
+          "STARL": 0.0,
+          "STETH": 0.0,
+          "STKATOM": 0.0,
+          "SUPER": 0.0,
+          "SUSHI": 0.0,
+          "SYN": 0.0,
+          "TENSOR": 0.0,
+          "THOR": 0.0,
+          "TOKE": 0.0,
+          "TOKEN": 0.0,
+          "TRX": 0.0,
+          "UFO": 0.0,
+          "UMA": 0.0,
+          "UNI": 0.0,
+          "UNIBOT": 0.0,
+          "UNISTAKE": 0.0,
+          "USDC": 400.0120003600108,
+          "USDT": 400.58405154715575,
+          "VLT": 0.0,
+          "VOLT": 0.0,
+          "VUSD": 0.0,
+          "WASABI": 0.0,
+          "WBTC": 0.0066256977687962765,
+          "WISE": 0.0,
+          "WNCG": 0.0,
+          "WOJAK": 0.0,
+          "WOLF": 0.0,
+          "WOO": 0.0,
+          "WSTETH": 0.0,
+          "XCN": 0.0,
+          "XFI": 0.0,
+          "XSUSHI": 0.0,
+          "YFI": 0.0
+        },
+        "pools": {
+          "0000_UNISWAP_V2_WISE/ETH": {
+            "reserve0": 521440815.6054623,
+            "reserve1": 28507.033800249937
+          },
+          "0001_UNISWAP_V2_PEPE/ETH": {
+            "reserve0": 3705838002820.033,
+            "reserve1": 5647.196188450538
+          },
+          "0002_UNISWAP_V2_ETH/USDC": {
+            "reserve0": 8065181.640639,
+            "reserve1": 5067.93433952984
+          },
+          "0003_UNISWAP_V2_ETH/USDT": {
+            "reserve0": 4255.23969802061,
+            "reserve1": 6781854.30089
+          },
+          "0004_UNISWAP_V2_PAXG/ETH": {
+            "reserve0": 1502.1644955606098,
+            "reserve1": 3841.9628335174366
+          },
+          "0005_UNISWAP_V2_SPX/ETH": {
+            "reserve0": 2621.7263201839387,
+            "reserve1": 12122987.30675591
+          },
+          "0006_UNISWAP_V2_ETH/DAI": {
+            "reserve0": 3711251.5956910485,
+            "reserve1": 2331.7496680658933
+          },
+          "0007_UNISWAP_V2_WBTC/ETH": {
+            "reserve0": 53.73734278,
+            "reserve1": 2036.5560982541376
+          },
+          "0008_UNISWAP_V2_FLOKI/ETH": {
+            "reserve0": 1753.0088545165952,
+            "reserve1": 126572813872.87909
+          },
+          "0009_UNISWAP_V2_MOG/ETH": {
+            "reserve0": 20019571545574.258,
+            "reserve1": 1331.720233429267
+          },
+          "0010_UNISWAP_V2_ELON/ETH": {
+            "reserve0": 72119054850167.19,
+            "reserve1": 1287.4265816354782
+          },
+          "0011_UNISWAP_V2_DG/USDC": {
+            "reserve0": 40183616.4120181,
+            "reserve1": 1677634.242829
+          },
+          "0012_UNISWAP_V2_USDC/USDT": {
+            "reserve0": 1663938.968482,
+            "reserve1": 1669330.266793
+          },
+          "0013_UNISWAP_V2_OPAL/ETH": {
+            "reserve0": 6487791.593788241,
+            "reserve1": 952.1904417101272
+          },
+          "0014_UNISWAP_V2_HEZ/USDT": {
+            "reserve0": 1372578.911509,
+            "reserve1": 455269.56220566196
+          },
+          "0015_UNISWAP_V2_NEIRO/ETH": {
+            "reserve0": 19005161143.47215,
+            "reserve1": 729.1278073092284
+          },
+          "0016_UNISWAP_V2_BEAM/ETH": {
+            "reserve0": 848257315.8806367,
+            "reserve1": 710.3576380215168
+          },
+          "0017_UNISWAP_V2_XFI/ETH": {
+            "reserve0": 27417.619091607667,
+            "reserve1": 650.2268752474449
+          },
+          "0018_UNISWAP_V2_BANANA/ETH": {
+            "reserve0": 381242.63454321504,
+            "reserve1": 643.3432571863378
+          },
+          "0019_UNISWAP_V2_GEKKO/ETH": {
+            "reserve0": 578.5245548758799,
+            "reserve1": 1929031452450.8525
+          },
+          "0020_UNISWAP_V2_UNI/ETH": {
+            "reserve0": 333459.9650113258,
+            "reserve1": 627.0027821769678
+          },
+          "0021_UNISWAP_V2_ASTEROID/ETH": {
+            "reserve0": 614.9792690092395,
+            "reserve1": 9964114505.233034
+          },
+          "0022_UNISWAP_V2_RAD/USDC": {
+            "reserve0": 4312685.629699144,
+            "reserve1": 921378.879027
+          },
+          "0023_UNISWAP_V2_SUPER/ETH": {
+            "reserve0": 582.3842646841604,
+            "reserve1": 10646271.105600782
+          },
+          "0024_UNISWAP_V2_NPC/ETH": {
+            "reserve0": 196561371.50361377,
+            "reserve1": 566.6189743520102
+          },
+          "0025_UNISWAP_V2_CAW/ETH": {
+            "reserve0": 505.149443838998,
+            "reserve1": 26421505770831.902
+          },
+          "0026_UNISWAP_V2_FLUT/DAI": {
+            "reserve0": 7963386713.899879,
+            "reserve1": 720680.1253235539
+          },
+          "0027_UNISWAP_V2_LON/ETH": {
+            "reserve0": 3743209.706907685,
+            "reserve1": 412.89686156954525
+          },
+          "0028_UNISWAP_V2_LFT/ETH": {
+            "reserve0": 1655201234.0373957,
+            "reserve1": 302.9993920007603
+          },
+          "0029_UNISWAP_V2_TENSOR/DAI": {
+            "reserve0": 73980.5188500567,
+            "reserve1": 599444.9731098695
+          },
+          "0030_UNISWAP_V2_RAIL/ETH": {
+            "reserve0": 376.0910999995874,
+            "reserve1": 277082.76426840806
+          },
+          "0031_UNISWAP_V2_OLAS/ETH": {
+            "reserve0": 19342024.061453376,
+            "reserve1": 372.5219808055393
+          },
+          "0032_UNISWAP_V2_CULT/ETH": {
+            "reserve0": 360.9980074322185,
+            "reserve1": 999488719373.1765
+          },
+          "0033_UNISWAP_V2_DAI/USDC": {
+            "reserve0": 544339.483011459,
+            "reserve1": 544466.41399
+          },
+          "0034_UNISWAP_V2_HEZ/DAI": {
+            "reserve0": 534347.4292877334,
+            "reserve1": 177523.67917363244
+          },
+          "0035_UNISWAP_V2_SHIBDOGE/ETH": {
+            "reserve0": 5.873191193847334e+22,
+            "reserve1": 319.31480388523033
+          },
+          "0036_UNISWAP_V2_XCN/ETH": {
+            "reserve0": 128920907.44459161,
+            "reserve1": 318.2205341444115
+          },
+          "0037_UNISWAP_V2_HEZ/ETH": {
+            "reserve0": 309.76095651904495,
+            "reserve1": 164225.46443784973
+          },
+          "0038_UNISWAP_V2_MKR/ETH": {
+            "reserve0": 411.81541258047434,
+            "reserve1": 295.5624651993831
+          },
+          "0039_UNISWAP_V2_JOE/ETH": {
+            "reserve0": 94310277.96123762,
+            "reserve1": 304.47362001967593
+          },
+          "0040_UNISWAP_V2_FOX/ETH": {
+            "reserve0": 292.5965941485685,
+            "reserve1": 117656516.77619134
+          },
+          "0041_UNISWAP_V2_OCEAN/ETH": {
+            "reserve0": 3779463.775467603,
+            "reserve1": 283.57545825282375
+          },
+          "0042_UNISWAP_V2_WOJAK/ETH": {
+            "reserve0": 5374534544149.782,
+            "reserve1": 280.44479171281125
+          },
+          "0043_UNISWAP_V2_TOKEN/ETH": {
+            "reserve0": 189179873.01848623,
+            "reserve1": 281.7343676999116
+          },
+          "0044_UNISWAP_V2_LINK/ETH": {
+            "reserve0": 59448.18713419597,
+            "reserve1": 276.2009859886697
+          },
+          "0045_UNISWAP_V2_CAGA/USDT": {
+            "reserve0": 17151312011.136698,
+            "reserve1": 436500.394267
+          },
+          "0046_UNISWAP_V2_PEPECOIN/ETH": {
+            "reserve0": 8269033.058289029,
+            "reserve1": 273.7420250202354
+          },
+          "0047_UNISWAP_V2_DUMMY/ETH": {
+            "reserve0": 6609193276237.175,
+            "reserve1": 239.297364948549
+          },
+          "0048_UNISWAP_V2_KISHU/ETH": {
+            "reserve0": 3416319390314872.0,
+            "reserve1": 266.09013498633175
+          },
+          "0049_UNISWAP_V2_STARL/ETH": {
+            "reserve0": 4040744986449.035,
+            "reserve1": 246.3734159856649
+          },
+          "0050_UNISWAP_V2_WTRX/USDC": {
+            "reserve0": 1143607.825425,
+            "reserve1": 366186.034162
+          },
+          "0051_UNISWAP_V2_DSYNC/ETH": {
+            "reserve0": 222.2923884517117,
+            "reserve1": 66881724.11010883
+          },
+          "0052_UNISWAP_V2_APU/ETH": {
+            "reserve0": 19811624828.988895,
+            "reserve1": 228.0412486812001
+          },
+          "0053_UNISWAP_V2_MONGOOSE/ETH": {
+            "reserve0": 5.1129500491437104e+22,
+            "reserve1": 208.12375480223187
+          },
+          "0054_UNISWAP_V2_ANDY/ETH": {
+            "reserve0": 85535418613.37827,
+            "reserve1": 221.8282492955113
+          },
+          "0055_UNISWAP_V2_MYX/ETH": {
+            "reserve0": 561257534.6095984,
+            "reserve1": 206.51008830626833
+          },
+          "0056_UNISWAP_V2_VOLT/ETH": {
+            "reserve0": 9077668345217.709,
+            "reserve1": 214.11649635524094
+          },
+          "0057_UNISWAP_V2_PAAL/ETH": {
+            "reserve0": 63172126.59404013,
+            "reserve1": 214.28397820643022
+          },
+          "0058_UNISWAP_V2_STETH/ETH": {
+            "reserve0": 208.7171375214893,
+            "reserve1": 208.08224608545382
+          },
+          "0059_UNISWAP_V2_FOUR/ETH": {
+            "reserve0": 329972135616.3956,
+            "reserve1": 202.06180864471855
+          },
+          "0060_UNISWAP_V2_OIL/USDC": {
+            "reserve0": 11853279.379479898,
+            "reserve1": 307896.055607
+          },
+          "0061_UNISWAP_V2_ETHY/ETH": {
+            "reserve0": 175.28819683150485,
+            "reserve1": 177707.69456522356
+          },
+          "0062_UNISWAP_V2_UFO/ETH": {
+            "reserve0": 11055799144730.422,
+            "reserve1": 192.47743999396783
+          },
+          "0063_UNISWAP_V2_LADYS/ETH": {
+            "reserve0": 53252270977257.83,
+            "reserve1": 189.24423742838354
+          },
+          "0064_UNISWAP_V2_GROK/ETH": {
+            "reserve0": 855766904.9913374,
+            "reserve1": 181.06749404141786
+          },
+          "0065_UNISWAP_V2_GME/ETH": {
+            "reserve0": 180.2156696418271,
+            "reserve1": 37533574164.44243
+          },
+          "0066_UNISWAP_V2_SAITABIT/WBTC": {
+            "reserve0": 3.69112762,
+            "reserve1": 493271176.24148005
+          },
+          "0067_UNISWAP_V2_UNISTAKE/ETH": {
+            "reserve0": 198996958.83749297,
+            "reserve1": 170.47535615030569
+          },
+          "0068_UNISWAP_V2_KEKIUS/ETH": {
+            "reserve0": 66554526.32005215,
+            "reserve1": 184.10358874470552
+          },
+          "0069_UNISWAP_V2_VLT/ETH": {
+            "reserve0": 911096.6200612877,
+            "reserve1": 176.11858505796513
+          },
+          "0070_UNISWAP_V2_AUDIO/ETH": {
+            "reserve0": 20109550.049392577,
+            "reserve1": 170.22474975726277
+          },
+          "0071_UNISWAP_V2_PUPPIES/ETH": {
+            "reserve0": 169.6586639060212,
+            "reserve1": 2440103017583.3115
+          },
+          "0072_UNISWAP_V2_UNIBOT/ETH": {
+            "reserve0": 173.2232302727109,
+            "reserve1": 466017.1744978643
+          },
+          "0073_UNISWAP_V2_DPI/ETH": {
+            "reserve0": 7558.658679151487,
+            "reserve1": 169.34015933415952
+          },
+          "0074_UNISWAP_V2_NATI/ETH": {
+            "reserve0": 2302561450228.1333,
+            "reserve1": 161.39391550794153
+          },
+          "0075_UNISWAP_V2_JESUS/ETH": {
+            "reserve0": 25018252110504.023,
+            "reserve1": 169.98040553124537
+          },
+          "0076_UNISWAP_V2_MASK/USDC": {
+            "reserve0": 669601.3298429704,
+            "reserve1": 259621.81454
+          },
+          "0077_UNISWAP_V2_WOJAK/ETH__0x0F23d49b": {
+            "reserve0": 23319923092.681095,
+            "reserve1": 165.0701033059922
+          },
+          "0078_UNISWAP_V2_CHKN/ETH": {
+            "reserve0": 162.13826372254218,
+            "reserve1": 22521054649832.992
+          },
+          "0079_UNISWAP_V2_HERA/USDC": {
+            "reserve0": 247899.888573,
+            "reserve1": 182749.03319713895
+          },
+          "0080_UNISWAP_V2_M87/ETH": {
+            "reserve0": 50777966538.47767,
+            "reserve1": 156.0534568887341
+          },
+          "0081_UNISWAP_V2_GOOCH/ETH": {
+            "reserve0": 3927571009.1715956,
+            "reserve1": 147.31410692875107
+          },
+          "0082_UNISWAP_V2_WOO/ETH": {
+            "reserve0": 21711923.629893277,
+            "reserve1": 152.3819006685802
+          },
+          "0083_UNISWAP_V2_FTMX/ETH": {
+            "reserve0": 27525789.491998788,
+            "reserve1": 151.91774593774784
+          },
+          "0084_UNISWAP_V2_PEIPEI/ETH": {
+            "reserve0": 38902816772870.055,
+            "reserve1": 154.61018909351026
+          },
+          "0085_UNISWAP_V2_WOLF/ETH": {
+            "reserve0": 47958743408.198586,
+            "reserve1": 153.94830098939406
+          },
+          "0086_UNISWAP_V2_AMPL/ETH": {
+            "reserve0": 149.2404964123681,
+            "reserve1": 193470.408317665
+          },
+          "0087_UNISWAP_V2_QRX/ETH": {
+            "reserve0": 78433504.64528681,
+            "reserve1": 150.35628229778834
+          },
+          "0088_UNISWAP_V2_ASTO/USDC": {
+            "reserve0": 87574015.57016854,
+            "reserve1": 229898.991357
+          },
+          "0089_SUSHISWAP_V2_DELTA/ETH": {
+            "reserve0": 5330542.760652064,
+            "reserve1": 1287.4340467716288
+          },
+          "0090_SUSHISWAP_V2_WBTC/ETH": {
+            "reserve0": 14.86783779,
+            "reserve1": 563.1776943944457
+          },
+          "0091_SUSHISWAP_V2_ILV/ETH": {
+            "reserve0": 259798.57048987804,
+            "reserve1": 476.45883675391894
+          },
+          "0092_SUSHISWAP_V2_ETH/RAIL": {
+            "reserve0": 255.78451857371573,
+            "reserve1": 188468.15507831093
+          },
+          "0093_SUSHISWAP_V2_ETH/ALCX": {
+            "reserve0": 182.23835905391934,
+            "reserve1": 109098.34061815799
+          },
+          "0094_SUSHISWAP_V2_ETH/USDT": {
+            "reserve0": 157.1085822271495,
+            "reserve1": 250120.388586
+          },
+          "0095_SUSHISWAP_V2_ETH/NFD": {
+            "reserve0": 157.45853233005462,
+            "reserve1": 13131135640.253717
+          },
+          "0096_SUSHISWAP_V2_USDC/QUARTZ": {
+            "reserve0": 243132.574865,
+            "reserve1": 3612021.6818991164
+          },
+          "0097_SUSHISWAP_V2_USDC/KIRA": {
+            "reserve0": 151804.870262,
+            "reserve1": 190072982.9869129
+          },
+          "0098_SUSHISWAP_V2_TOKE/ETH": {
+            "reserve0": 4428784.935643661,
+            "reserve1": 84.40212668054897
+          },
+          "0099_SUSHISWAP_V2_ETH/CIG": {
+            "reserve0": 72.81012649075457,
+            "reserve1": 337615448.19934887
+          },
+          "0100_SUSHISWAP_V2_MEEB/ETH": {
+            "reserve0": 194.79435523586193,
+            "reserve1": 73.88995669216351
+          },
+          "0101_SUSHISWAP_V2_USDC/ETH": {
+            "reserve0": 112333.49152,
+            "reserve1": 70.55103393522897
+          },
+          "0102_SUSHISWAP_V2_DAI/RAIL": {
+            "reserve0": 95031.94342566028,
+            "reserve1": 43909.97178454686
+          },
+          "0103_SUSHISWAP_V2_DAI/ETH": {
+            "reserve0": 90274.26131197214,
+            "reserve1": 56.788611740063835
+          },
+          "0104_SUSHISWAP_V2_CVX/ETH": {
+            "reserve0": 78310.21909824664,
+            "reserve1": 54.87227473952121
+          },
+          "0105_SUSHISWAP_V2_SUSHI/ETH": {
+            "reserve0": 557509.0918168537,
+            "reserve1": 55.56676213624881
+          },
+          "0106_SUSHISWAP_V2_SYN/ETH": {
+            "reserve0": 252035.00686435396,
+            "reserve1": 47.529941461661934
+          },
+          "0107_SUSHISWAP_V2_SPELL/ETH": {
+            "reserve0": 820868242.6285018,
+            "reserve1": 51.4959113839268
+          },
+          "0108_SUSHISWAP_V2_ICHI/ETH": {
+            "reserve0": 797609.02367937,
+            "reserve1": 43.197798579933114
+          },
+          "0109_SUSHISWAP_V2_XSUSHI/ETH": {
+            "reserve0": 267250.32561200386,
+            "reserve1": 41.723115699861154
+          },
+          "0110_SUSHISWAP_V2_LON/USDT": {
+            "reserve0": 365138.74356376874,
+            "reserve1": 64494.928796
+          },
+          "0111_SUSHISWAP_V2_STKATOM/ETH": {
+            "reserve0": 3503.044523,
+            "reserve1": 24.76503920139116
+          },
+          "0112_SUSHISWAP_V2_IQ/ETH": {
+            "reserve0": 63345143.81193348,
+            "reserve1": 29.658751268433917
+          },
+          "0113_SUSHISWAP_V2_FTX_TOKEN/ETH": {
+            "reserve0": 189974.01548994813,
+            "reserve1": 28.069098320913735
+          },
+          "0114_SUSHISWAP_V2_ETH/SHX": {
+            "reserve0": 27.64132080596947,
+            "reserve1": 10973205.0952587
+          },
+          "0115_SUSHISWAP_V2_YFI/ETH": {
+            "reserve0": 26.040782517204153,
+            "reserve1": 27.141301961559975
+          },
+          "0116_SUSHISWAP_V2_ETH/ENS": {
+            "reserve0": 25.45949649624189,
+            "reserve1": 9560.744191606875
+          },
+          "0117_SUSHISWAP_V2_FRAX/ETH": {
+            "reserve0": 39417.42609110504,
+            "reserve1": 24.51360493099514
+          },
+          "0118_SUSHISWAP_V2_COMP/ETH": {
+            "reserve0": 1958.7514425643549,
+            "reserve1": 19.588411271705482
+          },
+          "0119_SUSHISWAP_V2_AAVE/ETH": {
+            "reserve0": 317.3733278928425,
+            "reserve1": 18.873378883149112
+          },
+          "0120_SUSHISWAP_V2_MULTI/ETH": {
+            "reserve0": 356496.0479273414,
+            "reserve1": 18.795588440713704
+          },
+          "0121_SUSHISWAP_V2_BTC2X-FLI/WBTC": {
+            "reserve0": 2452.6459531130604,
+            "reserve1": 0.49137657
+          },
+          "0122_SUSHISWAP_V2_UMA/ETH": {
+            "reserve0": 74352.47954391562,
+            "reserve1": 17.984886034511227
+          },
+          "0123_SUSHISWAP_V2_FODL/USDC": {
+            "reserve0": 101831461.02147639,
+            "reserve1": 28432.336513
+          },
+          "0124_SUSHISWAP_V2_RAIL/RENBTC": {
+            "reserve0": 26248.137775622108,
+            "reserve1": 4.16947472
+          },
+          "0125_SUSHISWAP_V2_ETH/AMP": {
+            "reserve0": 17.29901078570122,
+            "reserve1": 57954916.0191124
+          },
+          "0126_SUSHISWAP_V2_BAND/ETH": {
+            "reserve0": 186219.3681834385,
+            "reserve1": 16.96374713520632
+          },
+          "0127_SUSHISWAP_V2_PENDLE/ETH": {
+            "reserve0": 19753.084510999266,
+            "reserve1": 15.64459495777744
+          },
+          "0128_SUSHISWAP_V2_ETH/AMPL": {
+            "reserve0": 15.099835191182928,
+            "reserve1": 19580.954867987
+          },
+          "0129_SUSHISWAP_V2_DIA/USDC": {
+            "reserve0": 220834.2188673697,
+            "reserve1": 23286.496822
+          },
+          "0130_SUSHISWAP_V2_C98/ETH": {
+            "reserve0": 1842594.9764287286,
+            "reserve1": 14.710060937011496
+          },
+          "0131_SUSHISWAP_V2_GOG/ETH": {
+            "reserve0": 10425986.68695643,
+            "reserve1": 14.852400964903
+          },
+          "0132_SUSHISWAP_V2_OHM/DAI": {
+            "reserve0": 1405.475000593,
+            "reserve1": 22311.49006956976
+          },
+          "0133_SUSHISWAP_V2_MIC/USDT": {
+            "reserve0": 821533.4069162009,
+            "reserve1": 21942.64334
+          },
+          "0134_SUSHISWAP_V2_NEAR/ETH": {
+            "reserve0": 11249.64439977933,
+            "reserve1": 13.369082807404908
+          },
+          "0135_SUSHISWAP_V2_EETH/ETH": {
+            "reserve0": 12.866625947418752,
+            "reserve1": 12.81128603929705
+          },
+          "0136_SUSHISWAP_V2_WBTC/DIGG": {
+            "reserve0": 0.33177454,
+            "reserve1": 133.943237149
+          },
+          "0137_SUSHISWAP_V2_DDX/USDC": {
+            "reserve0": 377521.54112642095,
+            "reserve1": 18761.395744
+          },
+          "0138_SUSHISWAP_V2_RADAR/ETH": {
+            "reserve0": 80991245.89611636,
+            "reserve1": 11.520358380411773
+          },
+          "0139_SUSHISWAP_V2_VUSD/ETH": {
+            "reserve0": 17943.78406256201,
+            "reserve1": 11.254713260911952
+          },
+          "0140_SUSHISWAP_V2_OHM/DAI__0x34d7d7aa": {
+            "reserve0": 336.482791317,
+            "reserve1": 16020.975628930726
+          },
+          "0141_SUSHISWAP_V2_BANK/ETH": {
+            "reserve0": 140436.71593417597,
+            "reserve1": 10.131233799065772
+          },
+          "0142_SUSHISWAP_V2_ETH/IMX": {
+            "reserve0": 9.96133809001652,
+            "reserve1": 127565.80876300609
+          },
+          "0143_SUSHISWAP_V2_KP3R/ETH": {
+            "reserve0": 19046.057307454423,
+            "reserve1": 9.74903261564138
+          },
+          "0144_SUSHISWAP_V2_OMNI/ETH": {
+            "reserve0": 3367495087.141529,
+            "reserve1": 9.36578708635364
+          },
+          "0145_SUSHISWAP_V2_NST/ETH": {
+            "reserve0": 12542.803966345633,
+            "reserve1": 9.199368069232031
+          },
+          "0146_SUSHISWAP_V2_DOG/ETH": {
+            "reserve0": 39686147.90180788,
+            "reserve1": 8.588447885561838
+          },
+          "0147_SUSHISWAP_V2_SNX/ETH": {
+            "reserve0": 60326.5569955251,
+            "reserve1": 8.492846250394884
+          },
+          "0148_SUSHISWAP_V2_BIFI/ETH": {
+            "reserve0": 7883102.703156233,
+            "reserve1": 7.754515967630282
+          },
+          "0149_SUSHISWAP_V2_ETH/BICO": {
+            "reserve0": 7.733061518018053,
+            "reserve1": 621049.4318514931
+          },
+          "0150_SUSHISWAP_V2_SFI/ETH": {
+            "reserve0": 119.64487903775824,
+            "reserve1": 7.612819220102409
+          },
+          "0151_SUSHISWAP_V2_MOONCAT/ETH": {
+            "reserve0": 48.83353033305155,
+            "reserve1": 6.950192132530218
+          },
+          "0152_SUSHISWAP_V2_FODL/ETH": {
+            "reserve0": 39163636.350632966,
+            "reserve1": 6.871166967936601
+          },
+          "0153_SUSHISWAP_V2_NFTX/ETH": {
+            "reserve0": 2375.8716850274977,
+            "reserve1": 6.321114246753238
+          },
+          "0154_SUSHISWAP_V2_MANA/ETH": {
+            "reserve0": 153345.237325678,
+            "reserve1": 6.24916542394031
+          },
+          "0155_SUSHISWAP_V2_GCAKE/ETH": {
+            "reserve0": 1846570239663.9,
+            "reserve1": 5.921520652949461
+          },
+          "0156_SUSHISWAP_V2_SUSHI/FRAX": {
+            "reserve0": 63370.293679098046,
+            "reserve1": 10097.890366101812
+          },
+          "0157_SUSHISWAP_V2_THOR/ETH": {
+            "reserve0": 307292.6917761665,
+            "reserve1": 6.151778066311867
+          },
+          "0158_SUSHISWAP_V2_LDO/ETH": {
+            "reserve0": 39482.818581499785,
+            "reserve1": 6.142852767683861
+          },
+          "0159_SUSHISWAP_V2_ETH/DOGEGF": {
+            "reserve0": 6.023572571489354,
+            "reserve1": 355676882272234.2
+          },
+          "0160_SUSHISWAP_V2_OHM/LUSD": {
+            "reserve0": 194.798928573,
+            "reserve1": 9164.601731730976
+          },
+          "0161_SUSHISWAP_V2_WASABI/ETH": {
+            "reserve0": 4607053.460053084,
+            "reserve1": 4.477658319796815
+          },
+          "0162_SUSHISWAP_V2_DPI/ETH": {
+            "reserve0": 254.4489874660248,
+            "reserve1": 5.701951816415959
+          },
+          "0163_SUSHISWAP_V2_UNI/ETH": {
+            "reserve0": 3033.4611486262334,
+            "reserve1": 5.712243627749704
+          },
+          "0164_SUSHISWAP_V2_LINK/ETH": {
+            "reserve0": 1194.4246576626974,
+            "reserve1": 5.55255756763686
+          },
+          "0165_SUSHISWAP_V2_ETH/GRT": {
+            "reserve0": 5.233762289185849,
+            "reserve1": 462626.7738106763
+          },
+          "0166_SUSHISWAP_V2_RARE/ETH": {
+            "reserve0": 680086.7947820398,
+            "reserve1": 5.212982294902172
+          },
+          "0167_SUSHISWAP_V2_OCEAN/ETH": {
+            "reserve0": 68779.66119544252,
+            "reserve1": 5.165817099719092
+          },
+          "0168_SUSHISWAP_V2_DAI/WSTETH": {
+            "reserve0": 8222.828856797149,
+            "reserve1": 4.162076918498104
+          },
+          "0169_SUSHISWAP_V2_POND/ETH": {
+            "reserve0": 7563945.492577895,
+            "reserve1": 4.9490465138755475
+          },
+          "0170_SUSHISWAP_V2_NEWO/USDC": {
+            "reserve0": 26542450.89344716,
+            "reserve1": 8101.660709
+          },
+          "0171_SUSHISWAP_V2_ETH/QTO": {
+            "reserve0": 4.775499747536315,
+            "reserve1": 68942.80155184073
+          },
+          "0172_SUSHISWAP_V2_ETH/WNCG": {
+            "reserve0": 4.340857708946084,
+            "reserve1": 1378602.6064749372
+          },
+          "0173_SUSHISWAP_V2_OHM/ETH": {
+            "reserve0": 134.931354481,
+            "reserve1": 4.026109314361215
+          }
+        },
+        "gas": {
+          "source_row_index": 172,
+          "gas_price_gwei": 1.74932835,
+          "gas_used": 174193.0,
+          "eth_usd": 1590.44,
+          "gas_cost_usd": 0.484640074833204
+        }
+      },
+      "final_state": {
+        "wallet": {
+          "$PAAL": 0.0,
+          "AAVE": 0.0,
+          "ALCX": 0.0,
+          "AMP": 0.0,
+          "AMPL": 0.0,
+          "ANDY": 0.0,
+          "APU": 0.0,
+          "ASTEROID": 0.0,
+          "ASTO": 0.0,
+          "AUDIO": 0.0,
+          "BANANA": 0.0,
+          "BAND": 0.0,
+          "BANK": 0.0,
+          "BEAM": 0.0,
+          "BICO": 0.0,
+          "BIFI": 0.0,
+          "BTC2X-FLI": 0.0,
+          "C98": 0.0,
+          "CAGA": 0.0,
+          "CAW": 0.0,
+          "CHKN": 0.0,
+          "CIG": 0.0,
+          "COMP": 0.0,
+          "CULT": 0.0,
+          "CVX": 0.0,
+          "DAI": 407.91346239405755,
+          "DDX": 0.0,
+          "DELTA": 0.0,
+          "DG": 0.0,
+          "DIA": 0.0,
+          "DIGG": 0.0,
+          "DOG": 0.0,
+          "DOGEGF": 0.0,
+          "DPI": 0.0,
+          "DSYNC": 0.0,
+          "DUMMY": 0.0,
+          "EETH": 0.0,
+          "ELON": 0.0,
+          "ENS": 0.0,
+          "ETH": 2.07533896627624,
+          "ETHY": 0.0,
+          "FLOKI": 0.0,
+          "FLUT": 0.0,
+          "FODL": 0.0,
+          "FOUR": 0.0,
+          "FOX": 0.0,
+          "FRAX": 0.0,
+          "FTMX": 0.0,
+          "FTX TOKEN": 0.0,
+          "GCAKE": 0.0,
+          "GEKKO": 0.0,
+          "GME": 0.0,
+          "GOG": 0.0,
+          "GOOCH": 0.0,
+          "GROK": 0.0,
+          "GRT": 0.0,
+          "HERA": 0.0,
+          "HEZ": 0.0,
+          "ICHI": 0.0,
+          "ILV": 0.0,
+          "IMX": 0.0,
+          "IQ": 0.0,
+          "JESUS": 0.0,
+          "JOE": 0.0,
+          "KEKIUS": 0.0,
+          "KIRA": 0.0,
+          "KISHU": 0.0,
+          "KP3R": 0.0,
+          "LADYS": 0.0,
+          "LDO": 0.0,
+          "LFT": 0.0,
+          "LINK": 0.0,
+          "LON": 0.0,
+          "LUSD": 0.0,
+          "M87": 0.0,
+          "MANA": 0.0,
+          "MASK": 0.0,
+          "MEEB": 0.0,
+          "MIC": 0.0,
+          "MKR": 0.0,
+          "MOG": 0.0,
+          "MONGOOSE": 0.0,
+          "MOONCAT": 0.0,
+          "MULTI": 0.0,
+          "MYX": 0.0,
+          "NATI": 0.0,
+          "NEAR": 0.0,
+          "NEIRO": 0.0,
+          "NEWO": 0.0,
+          "NFD": 0.0,
+          "NFTX": 0.0,
+          "NPC": 0.0,
+          "NST": 0.0,
+          "OCEAN": 0.0,
+          "OHM": 0.0,
+          "OIL": 0.0,
+          "OLAS": 0.0,
+          "OMNI": 0.0,
+          "OPAL": 0.0,
+          "PAXG": 0.0,
+          "PEIPEI": 0.0,
+          "PENDLE": 0.0,
+          "PEPE": 0.0,
+          "PEPECOIN": 0.0,
+          "POND": 0.0,
+          "PUPPIES": 0.0,
+          "QRX": 0.0,
+          "QTO": 0.0,
+          "QUARTZ": 0.0,
+          "RAD": 0.0,
+          "RADAR": 0.0,
+          "RAIL": 0.0,
+          "RARE": 0.0,
+          "RENBTC": 0.0,
+          "SAITABIT": 0.0,
+          "SFI": 0.0,
+          "SHIBDOGE": 0.0,
+          "SHX": 0.0,
+          "SNX": 0.0,
+          "SPELL": 0.0,
+          "SPX": 0.0,
+          "STARL": 0.0,
+          "STETH": 0.0,
+          "STKATOM": 0.0,
+          "SUPER": 0.0,
+          "SUSHI": 0.0,
+          "SYN": 0.0,
+          "TENSOR": 0.0,
+          "THOR": 0.0,
+          "TOKE": 0.0,
+          "TOKEN": 0.0,
+          "TRX": 0.0,
+          "UFO": 0.0,
+          "UMA": 0.0,
+          "UNI": 0.0,
+          "UNIBOT": 0.0,
+          "UNISTAKE": 0.0,
+          "USDC": 400.0120003600108,
+          "USDT": 400.58405154715575,
+          "VLT": 0.0,
+          "VOLT": 0.0,
+          "VUSD": 0.0,
+          "WASABI": 0.0,
+          "WBTC": 0.0066256977687962765,
+          "WISE": 0.0,
+          "WNCG": 0.0,
+          "WOJAK": 0.0,
+          "WOLF": 0.0,
+          "WOO": 0.0,
+          "WSTETH": 0.0,
+          "XCN": 0.0,
+          "XFI": 0.0,
+          "XSUSHI": 0.0,
+          "YFI": 0.0
+        },
+        "pools": {
+          "0000_UNISWAP_V2_WISE/ETH": {
+            "reserve0": 521440815.6054623,
+            "reserve1": 28507.033800249937
+          },
+          "0001_UNISWAP_V2_PEPE/ETH": {
+            "reserve0": 3705838002820.033,
+            "reserve1": 5647.196188450538
+          },
+          "0002_UNISWAP_V2_ETH/USDC": {
+            "reserve0": 8065181.640639,
+            "reserve1": 5067.93433952984
+          },
+          "0003_UNISWAP_V2_ETH/USDT": {
+            "reserve0": 4255.23969802061,
+            "reserve1": 6781854.30089
+          },
+          "0004_UNISWAP_V2_PAXG/ETH": {
+            "reserve0": 1502.1644955606098,
+            "reserve1": 3841.9628335174366
+          },
+          "0005_UNISWAP_V2_SPX/ETH": {
+            "reserve0": 2621.7263201839387,
+            "reserve1": 12122987.30675591
+          },
+          "0006_UNISWAP_V2_ETH/DAI": {
+            "reserve0": 3712097.367097335,
+            "reserve1": 2331.2374645833975
+          },
+          "0007_UNISWAP_V2_WBTC/ETH": {
+            "reserve0": 53.73734278,
+            "reserve1": 2036.5560982541376
+          },
+          "0008_UNISWAP_V2_FLOKI/ETH": {
+            "reserve0": 1753.0088545165952,
+            "reserve1": 126572813872.87909
+          },
+          "0009_UNISWAP_V2_MOG/ETH": {
+            "reserve0": 20019571545574.258,
+            "reserve1": 1331.720233429267
+          },
+          "0010_UNISWAP_V2_ELON/ETH": {
+            "reserve0": 72119054850167.19,
+            "reserve1": 1287.4265816354782
+          },
+          "0011_UNISWAP_V2_DG/USDC": {
+            "reserve0": 40183616.4120181,
+            "reserve1": 1677634.242829
+          },
+          "0012_UNISWAP_V2_USDC/USDT": {
+            "reserve0": 1663938.968482,
+            "reserve1": 1669330.266793
+          },
+          "0013_UNISWAP_V2_OPAL/ETH": {
+            "reserve0": 6487791.593788241,
+            "reserve1": 952.1904417101272
+          },
+          "0014_UNISWAP_V2_HEZ/USDT": {
+            "reserve0": 1372578.911509,
+            "reserve1": 455269.56220566196
+          },
+          "0015_UNISWAP_V2_NEIRO/ETH": {
+            "reserve0": 19005161143.47215,
+            "reserve1": 729.1278073092284
+          },
+          "0016_UNISWAP_V2_BEAM/ETH": {
+            "reserve0": 848257315.8806367,
+            "reserve1": 710.3576380215168
+          },
+          "0017_UNISWAP_V2_XFI/ETH": {
+            "reserve0": 27417.619091607667,
+            "reserve1": 650.2268752474449
+          },
+          "0018_UNISWAP_V2_BANANA/ETH": {
+            "reserve0": 381242.63454321504,
+            "reserve1": 643.3432571863378
+          },
+          "0019_UNISWAP_V2_GEKKO/ETH": {
+            "reserve0": 578.5245548758799,
+            "reserve1": 1929031452450.8525
+          },
+          "0020_UNISWAP_V2_UNI/ETH": {
+            "reserve0": 333459.9650113258,
+            "reserve1": 627.0027821769678
+          },
+          "0021_UNISWAP_V2_ASTEROID/ETH": {
+            "reserve0": 614.9792690092395,
+            "reserve1": 9964114505.233034
+          },
+          "0022_UNISWAP_V2_RAD/USDC": {
+            "reserve0": 4312685.629699144,
+            "reserve1": 921378.879027
+          },
+          "0023_UNISWAP_V2_SUPER/ETH": {
+            "reserve0": 582.3842646841604,
+            "reserve1": 10646271.105600782
+          },
+          "0024_UNISWAP_V2_NPC/ETH": {
+            "reserve0": 196561371.50361377,
+            "reserve1": 566.6189743520102
+          },
+          "0025_UNISWAP_V2_CAW/ETH": {
+            "reserve0": 505.149443838998,
+            "reserve1": 26421505770831.902
+          },
+          "0026_UNISWAP_V2_FLUT/DAI": {
+            "reserve0": 7963386713.899879,
+            "reserve1": 720680.1253235539
+          },
+          "0027_UNISWAP_V2_LON/ETH": {
+            "reserve0": 3743209.706907685,
+            "reserve1": 412.89686156954525
+          },
+          "0028_UNISWAP_V2_LFT/ETH": {
+            "reserve0": 1655201234.0373957,
+            "reserve1": 302.9993920007603
+          },
+          "0029_UNISWAP_V2_TENSOR/DAI": {
+            "reserve0": 73980.5188500567,
+            "reserve1": 599444.9731098695
+          },
+          "0030_UNISWAP_V2_RAIL/ETH": {
+            "reserve0": 376.0910999995874,
+            "reserve1": 277082.76426840806
+          },
+          "0031_UNISWAP_V2_OLAS/ETH": {
+            "reserve0": 19342024.061453376,
+            "reserve1": 372.5219808055393
+          },
+          "0032_UNISWAP_V2_CULT/ETH": {
+            "reserve0": 360.9980074322185,
+            "reserve1": 999488719373.1765
+          },
+          "0033_UNISWAP_V2_DAI/USDC": {
+            "reserve0": 544339.483011459,
+            "reserve1": 544466.41399
+          },
+          "0034_UNISWAP_V2_HEZ/DAI": {
+            "reserve0": 534347.4292877334,
+            "reserve1": 177523.67917363244
+          },
+          "0035_UNISWAP_V2_SHIBDOGE/ETH": {
+            "reserve0": 5.873191193847334e+22,
+            "reserve1": 319.31480388523033
+          },
+          "0036_UNISWAP_V2_XCN/ETH": {
+            "reserve0": 128920907.44459161,
+            "reserve1": 318.2205341444115
+          },
+          "0037_UNISWAP_V2_HEZ/ETH": {
+            "reserve0": 309.76095651904495,
+            "reserve1": 164225.46443784973
+          },
+          "0038_UNISWAP_V2_MKR/ETH": {
+            "reserve0": 411.81541258047434,
+            "reserve1": 295.5624651993831
+          },
+          "0039_UNISWAP_V2_JOE/ETH": {
+            "reserve0": 94310277.96123762,
+            "reserve1": 304.47362001967593
+          },
+          "0040_UNISWAP_V2_FOX/ETH": {
+            "reserve0": 292.5965941485685,
+            "reserve1": 117656516.77619134
+          },
+          "0041_UNISWAP_V2_OCEAN/ETH": {
+            "reserve0": 3779463.775467603,
+            "reserve1": 283.57545825282375
+          },
+          "0042_UNISWAP_V2_WOJAK/ETH": {
+            "reserve0": 5374534544149.782,
+            "reserve1": 280.44479171281125
+          },
+          "0043_UNISWAP_V2_TOKEN/ETH": {
+            "reserve0": 189179873.01848623,
+            "reserve1": 281.7343676999116
+          },
+          "0044_UNISWAP_V2_LINK/ETH": {
+            "reserve0": 59448.18713419597,
+            "reserve1": 276.2009859886697
+          },
+          "0045_UNISWAP_V2_CAGA/USDT": {
+            "reserve0": 17151312011.136698,
+            "reserve1": 436500.394267
+          },
+          "0046_UNISWAP_V2_PEPECOIN/ETH": {
+            "reserve0": 8269033.058289029,
+            "reserve1": 273.7420250202354
+          },
+          "0047_UNISWAP_V2_DUMMY/ETH": {
+            "reserve0": 6609193276237.175,
+            "reserve1": 239.297364948549
+          },
+          "0048_UNISWAP_V2_KISHU/ETH": {
+            "reserve0": 3416319390314872.0,
+            "reserve1": 266.09013498633175
+          },
+          "0049_UNISWAP_V2_STARL/ETH": {
+            "reserve0": 4040744986449.035,
+            "reserve1": 246.3734159856649
+          },
+          "0050_UNISWAP_V2_WTRX/USDC": {
+            "reserve0": 1143607.825425,
+            "reserve1": 366186.034162
+          },
+          "0051_UNISWAP_V2_DSYNC/ETH": {
+            "reserve0": 222.2923884517117,
+            "reserve1": 66881724.11010883
+          },
+          "0052_UNISWAP_V2_APU/ETH": {
+            "reserve0": 19811624828.988895,
+            "reserve1": 228.0412486812001
+          },
+          "0053_UNISWAP_V2_MONGOOSE/ETH": {
+            "reserve0": 5.1129500491437104e+22,
+            "reserve1": 208.12375480223187
+          },
+          "0054_UNISWAP_V2_ANDY/ETH": {
+            "reserve0": 85535418613.37827,
+            "reserve1": 221.8282492955113
+          },
+          "0055_UNISWAP_V2_MYX/ETH": {
+            "reserve0": 561257534.6095984,
+            "reserve1": 206.51008830626833
+          },
+          "0056_UNISWAP_V2_VOLT/ETH": {
+            "reserve0": 9077668345217.709,
+            "reserve1": 214.11649635524094
+          },
+          "0057_UNISWAP_V2_PAAL/ETH": {
+            "reserve0": 63172126.59404013,
+            "reserve1": 214.28397820643022
+          },
+          "0058_UNISWAP_V2_STETH/ETH": {
+            "reserve0": 208.7171375214893,
+            "reserve1": 208.08224608545382
+          },
+          "0059_UNISWAP_V2_FOUR/ETH": {
+            "reserve0": 329972135616.3956,
+            "reserve1": 202.06180864471855
+          },
+          "0060_UNISWAP_V2_OIL/USDC": {
+            "reserve0": 11853279.379479898,
+            "reserve1": 307896.055607
+          },
+          "0061_UNISWAP_V2_ETHY/ETH": {
+            "reserve0": 175.28819683150485,
+            "reserve1": 177707.69456522356
+          },
+          "0062_UNISWAP_V2_UFO/ETH": {
+            "reserve0": 11055799144730.422,
+            "reserve1": 192.47743999396783
+          },
+          "0063_UNISWAP_V2_LADYS/ETH": {
+            "reserve0": 53252270977257.83,
+            "reserve1": 189.24423742838354
+          },
+          "0064_UNISWAP_V2_GROK/ETH": {
+            "reserve0": 855766904.9913374,
+            "reserve1": 181.06749404141786
+          },
+          "0065_UNISWAP_V2_GME/ETH": {
+            "reserve0": 180.2156696418271,
+            "reserve1": 37533574164.44243
+          },
+          "0066_UNISWAP_V2_SAITABIT/WBTC": {
+            "reserve0": 3.69112762,
+            "reserve1": 493271176.24148005
+          },
+          "0067_UNISWAP_V2_UNISTAKE/ETH": {
+            "reserve0": 198996958.83749297,
+            "reserve1": 170.47535615030569
+          },
+          "0068_UNISWAP_V2_KEKIUS/ETH": {
+            "reserve0": 66554526.32005215,
+            "reserve1": 184.10358874470552
+          },
+          "0069_UNISWAP_V2_VLT/ETH": {
+            "reserve0": 911096.6200612877,
+            "reserve1": 176.11858505796513
+          },
+          "0070_UNISWAP_V2_AUDIO/ETH": {
+            "reserve0": 20109550.049392577,
+            "reserve1": 170.22474975726277
+          },
+          "0071_UNISWAP_V2_PUPPIES/ETH": {
+            "reserve0": 169.6586639060212,
+            "reserve1": 2440103017583.3115
+          },
+          "0072_UNISWAP_V2_UNIBOT/ETH": {
+            "reserve0": 173.2232302727109,
+            "reserve1": 466017.1744978643
+          },
+          "0073_UNISWAP_V2_DPI/ETH": {
+            "reserve0": 7558.658679151487,
+            "reserve1": 169.34015933415952
+          },
+          "0074_UNISWAP_V2_NATI/ETH": {
+            "reserve0": 2302561450228.1333,
+            "reserve1": 161.39391550794153
+          },
+          "0075_UNISWAP_V2_JESUS/ETH": {
+            "reserve0": 25018252110504.023,
+            "reserve1": 169.98040553124537
+          },
+          "0076_UNISWAP_V2_MASK/USDC": {
+            "reserve0": 669601.3298429704,
+            "reserve1": 259621.81454
+          },
+          "0077_UNISWAP_V2_WOJAK/ETH__0x0F23d49b": {
+            "reserve0": 23319923092.681095,
+            "reserve1": 165.0701033059922
+          },
+          "0078_UNISWAP_V2_CHKN/ETH": {
+            "reserve0": 162.13826372254218,
+            "reserve1": 22521054649832.992
+          },
+          "0079_UNISWAP_V2_HERA/USDC": {
+            "reserve0": 247899.888573,
+            "reserve1": 182749.03319713895
+          },
+          "0080_UNISWAP_V2_M87/ETH": {
+            "reserve0": 50777966538.47767,
+            "reserve1": 156.0534568887341
+          },
+          "0081_UNISWAP_V2_GOOCH/ETH": {
+            "reserve0": 3927571009.1715956,
+            "reserve1": 147.31410692875107
+          },
+          "0082_UNISWAP_V2_WOO/ETH": {
+            "reserve0": 21711923.629893277,
+            "reserve1": 152.3819006685802
+          },
+          "0083_UNISWAP_V2_FTMX/ETH": {
+            "reserve0": 27525789.491998788,
+            "reserve1": 151.91774593774784
+          },
+          "0084_UNISWAP_V2_PEIPEI/ETH": {
+            "reserve0": 38902816772870.055,
+            "reserve1": 154.61018909351026
+          },
+          "0085_UNISWAP_V2_WOLF/ETH": {
+            "reserve0": 47958743408.198586,
+            "reserve1": 153.94830098939406
+          },
+          "0086_UNISWAP_V2_AMPL/ETH": {
+            "reserve0": 149.2404964123681,
+            "reserve1": 193470.408317665
+          },
+          "0087_UNISWAP_V2_QRX/ETH": {
+            "reserve0": 78433504.64528681,
+            "reserve1": 150.35628229778834
+          },
+          "0088_UNISWAP_V2_ASTO/USDC": {
+            "reserve0": 87574015.57016854,
+            "reserve1": 229898.991357
+          },
+          "0089_SUSHISWAP_V2_DELTA/ETH": {
+            "reserve0": 5330542.760652064,
+            "reserve1": 1287.4340467716288
+          },
+          "0090_SUSHISWAP_V2_WBTC/ETH": {
+            "reserve0": 14.86783779,
+            "reserve1": 563.1776943944457
+          },
+          "0091_SUSHISWAP_V2_ILV/ETH": {
+            "reserve0": 259798.57048987804,
+            "reserve1": 476.45883675391894
+          },
+          "0092_SUSHISWAP_V2_ETH/RAIL": {
+            "reserve0": 255.78451857371573,
+            "reserve1": 188468.15507831093
+          },
+          "0093_SUSHISWAP_V2_ETH/ALCX": {
+            "reserve0": 182.23835905391934,
+            "reserve1": 109098.34061815799
+          },
+          "0094_SUSHISWAP_V2_ETH/USDT": {
+            "reserve0": 157.1085822271495,
+            "reserve1": 250120.388586
+          },
+          "0095_SUSHISWAP_V2_ETH/NFD": {
+            "reserve0": 157.45853233005462,
+            "reserve1": 13131135640.253717
+          },
+          "0096_SUSHISWAP_V2_USDC/QUARTZ": {
+            "reserve0": 243132.574865,
+            "reserve1": 3612021.6818991164
+          },
+          "0097_SUSHISWAP_V2_USDC/KIRA": {
+            "reserve0": 151804.870262,
+            "reserve1": 190072982.9869129
+          },
+          "0098_SUSHISWAP_V2_TOKE/ETH": {
+            "reserve0": 4428784.935643661,
+            "reserve1": 84.40212668054897
+          },
+          "0099_SUSHISWAP_V2_ETH/CIG": {
+            "reserve0": 72.81012649075457,
+            "reserve1": 337615448.19934887
+          },
+          "0100_SUSHISWAP_V2_MEEB/ETH": {
+            "reserve0": 194.79435523586193,
+            "reserve1": 73.88995669216351
+          },
+          "0101_SUSHISWAP_V2_USDC/ETH": {
+            "reserve0": 112333.49152,
+            "reserve1": 70.55103393522897
+          },
+          "0102_SUSHISWAP_V2_DAI/RAIL": {
+            "reserve0": 95031.94342566028,
+            "reserve1": 43909.97178454686
+          },
+          "0103_SUSHISWAP_V2_DAI/ETH": {
+            "reserve0": 90274.26131197214,
+            "reserve1": 56.788611740063835
+          },
+          "0104_SUSHISWAP_V2_CVX/ETH": {
+            "reserve0": 78310.21909824664,
+            "reserve1": 54.87227473952121
+          },
+          "0105_SUSHISWAP_V2_SUSHI/ETH": {
+            "reserve0": 557509.0918168537,
+            "reserve1": 55.56676213624881
+          },
+          "0106_SUSHISWAP_V2_SYN/ETH": {
+            "reserve0": 252035.00686435396,
+            "reserve1": 47.529941461661934
+          },
+          "0107_SUSHISWAP_V2_SPELL/ETH": {
+            "reserve0": 820868242.6285018,
+            "reserve1": 51.4959113839268
+          },
+          "0108_SUSHISWAP_V2_ICHI/ETH": {
+            "reserve0": 797609.02367937,
+            "reserve1": 43.197798579933114
+          },
+          "0109_SUSHISWAP_V2_XSUSHI/ETH": {
+            "reserve0": 267250.32561200386,
+            "reserve1": 41.723115699861154
+          },
+          "0110_SUSHISWAP_V2_LON/USDT": {
+            "reserve0": 365138.74356376874,
+            "reserve1": 64494.928796
+          },
+          "0111_SUSHISWAP_V2_STKATOM/ETH": {
+            "reserve0": 3503.044523,
+            "reserve1": 24.76503920139116
+          },
+          "0112_SUSHISWAP_V2_IQ/ETH": {
+            "reserve0": 63345143.81193348,
+            "reserve1": 29.658751268433917
+          },
+          "0113_SUSHISWAP_V2_FTX_TOKEN/ETH": {
+            "reserve0": 189974.01548994813,
+            "reserve1": 28.069098320913735
+          },
+          "0114_SUSHISWAP_V2_ETH/SHX": {
+            "reserve0": 27.64132080596947,
+            "reserve1": 10973205.0952587
+          },
+          "0115_SUSHISWAP_V2_YFI/ETH": {
+            "reserve0": 26.040782517204153,
+            "reserve1": 27.141301961559975
+          },
+          "0116_SUSHISWAP_V2_ETH/ENS": {
+            "reserve0": 25.45949649624189,
+            "reserve1": 9560.744191606875
+          },
+          "0117_SUSHISWAP_V2_FRAX/ETH": {
+            "reserve0": 39417.42609110504,
+            "reserve1": 24.51360493099514
+          },
+          "0118_SUSHISWAP_V2_COMP/ETH": {
+            "reserve0": 1958.7514425643549,
+            "reserve1": 19.588411271705482
+          },
+          "0119_SUSHISWAP_V2_AAVE/ETH": {
+            "reserve0": 317.3733278928425,
+            "reserve1": 18.873378883149112
+          },
+          "0120_SUSHISWAP_V2_MULTI/ETH": {
+            "reserve0": 356496.0479273414,
+            "reserve1": 18.795588440713704
+          },
+          "0121_SUSHISWAP_V2_BTC2X-FLI/WBTC": {
+            "reserve0": 2452.6459531130604,
+            "reserve1": 0.49137657
+          },
+          "0122_SUSHISWAP_V2_UMA/ETH": {
+            "reserve0": 74352.47954391562,
+            "reserve1": 17.984886034511227
+          },
+          "0123_SUSHISWAP_V2_FODL/USDC": {
+            "reserve0": 101831461.02147639,
+            "reserve1": 28432.336513
+          },
+          "0124_SUSHISWAP_V2_RAIL/RENBTC": {
+            "reserve0": 26248.137775622108,
+            "reserve1": 4.16947472
+          },
+          "0125_SUSHISWAP_V2_ETH/AMP": {
+            "reserve0": 17.29901078570122,
+            "reserve1": 57954916.0191124
+          },
+          "0126_SUSHISWAP_V2_BAND/ETH": {
+            "reserve0": 186219.3681834385,
+            "reserve1": 16.96374713520632
+          },
+          "0127_SUSHISWAP_V2_PENDLE/ETH": {
+            "reserve0": 19753.084510999266,
+            "reserve1": 15.64459495777744
+          },
+          "0128_SUSHISWAP_V2_ETH/AMPL": {
+            "reserve0": 15.099835191182928,
+            "reserve1": 19580.954867987
+          },
+          "0129_SUSHISWAP_V2_DIA/USDC": {
+            "reserve0": 220834.2188673697,
+            "reserve1": 23286.496822
+          },
+          "0130_SUSHISWAP_V2_C98/ETH": {
+            "reserve0": 1842594.9764287286,
+            "reserve1": 14.710060937011496
+          },
+          "0131_SUSHISWAP_V2_GOG/ETH": {
+            "reserve0": 10425986.68695643,
+            "reserve1": 14.852400964903
+          },
+          "0132_SUSHISWAP_V2_OHM/DAI": {
+            "reserve0": 1181.4689459674928,
+            "reserve1": 26556.744561774998
+          },
+          "0133_SUSHISWAP_V2_MIC/USDT": {
+            "reserve0": 821533.4069162009,
+            "reserve1": 21942.64334
+          },
+          "0134_SUSHISWAP_V2_NEAR/ETH": {
+            "reserve0": 11249.64439977933,
+            "reserve1": 13.369082807404908
+          },
+          "0135_SUSHISWAP_V2_EETH/ETH": {
+            "reserve0": 12.866625947418752,
+            "reserve1": 12.81128603929705
+          },
+          "0136_SUSHISWAP_V2_WBTC/DIGG": {
+            "reserve0": 0.33177454,
+            "reserve1": 133.943237149
+          },
+          "0137_SUSHISWAP_V2_DDX/USDC": {
+            "reserve0": 377521.54112642095,
+            "reserve1": 18761.395744
+          },
+          "0138_SUSHISWAP_V2_RADAR/ETH": {
+            "reserve0": 80991245.89611636,
+            "reserve1": 11.520358380411773
+          },
+          "0139_SUSHISWAP_V2_VUSD/ETH": {
+            "reserve0": 17943.78406256201,
+            "reserve1": 11.254713260911952
+          },
+          "0140_SUSHISWAP_V2_OHM/DAI__0x34d7d7aa": {
+            "reserve0": 494.1319731389957,
+            "reserve1": 10922.177117623996
+          },
+          "0141_SUSHISWAP_V2_BANK/ETH": {
+            "reserve0": 140436.71593417597,
+            "reserve1": 10.131233799065772
+          },
+          "0142_SUSHISWAP_V2_ETH/IMX": {
+            "reserve0": 9.96133809001652,
+            "reserve1": 127565.80876300609
+          },
+          "0143_SUSHISWAP_V2_KP3R/ETH": {
+            "reserve0": 19046.057307454423,
+            "reserve1": 9.74903261564138
+          },
+          "0144_SUSHISWAP_V2_OMNI/ETH": {
+            "reserve0": 3367495087.141529,
+            "reserve1": 9.36578708635364
+          },
+          "0145_SUSHISWAP_V2_NST/ETH": {
+            "reserve0": 12542.803966345633,
+            "reserve1": 9.199368069232031
+          },
+          "0146_SUSHISWAP_V2_DOG/ETH": {
+            "reserve0": 39686147.90180788,
+            "reserve1": 8.588447885561838
+          },
+          "0147_SUSHISWAP_V2_SNX/ETH": {
+            "reserve0": 60326.5569955251,
+            "reserve1": 8.492846250394884
+          },
+          "0148_SUSHISWAP_V2_BIFI/ETH": {
+            "reserve0": 7883102.703156233,
+            "reserve1": 7.754515967630282
+          },
+          "0149_SUSHISWAP_V2_ETH/BICO": {
+            "reserve0": 7.733061518018053,
+            "reserve1": 621049.4318514931
+          },
+          "0150_SUSHISWAP_V2_SFI/ETH": {
+            "reserve0": 119.64487903775824,
+            "reserve1": 7.612819220102409
+          },
+          "0151_SUSHISWAP_V2_MOONCAT/ETH": {
+            "reserve0": 48.83353033305155,
+            "reserve1": 6.950192132530218
+          },
+          "0152_SUSHISWAP_V2_FODL/ETH": {
+            "reserve0": 39163636.350632966,
+            "reserve1": 6.871166967936601
+          },
+          "0153_SUSHISWAP_V2_NFTX/ETH": {
+            "reserve0": 2375.8716850274977,
+            "reserve1": 6.321114246753238
+          },
+          "0154_SUSHISWAP_V2_MANA/ETH": {
+            "reserve0": 153345.237325678,
+            "reserve1": 6.24916542394031
+          },
+          "0155_SUSHISWAP_V2_GCAKE/ETH": {
+            "reserve0": 1846570239663.9,
+            "reserve1": 5.921520652949461
+          },
+          "0156_SUSHISWAP_V2_SUSHI/FRAX": {
+            "reserve0": 63370.293679098046,
+            "reserve1": 10097.890366101812
+          },
+          "0157_SUSHISWAP_V2_THOR/ETH": {
+            "reserve0": 307292.6917761665,
+            "reserve1": 6.151778066311867
+          },
+          "0158_SUSHISWAP_V2_LDO/ETH": {
+            "reserve0": 39482.818581499785,
+            "reserve1": 6.142852767683861
+          },
+          "0159_SUSHISWAP_V2_ETH/DOGEGF": {
+            "reserve0": 6.023572571489354,
+            "reserve1": 355676882272234.2
+          },
+          "0160_SUSHISWAP_V2_OHM/LUSD": {
+            "reserve0": 194.798928573,
+            "reserve1": 9164.601731730976
+          },
+          "0161_SUSHISWAP_V2_WASABI/ETH": {
+            "reserve0": 4607053.460053084,
+            "reserve1": 4.477658319796815
+          },
+          "0162_SUSHISWAP_V2_DPI/ETH": {
+            "reserve0": 254.4489874660248,
+            "reserve1": 5.701951816415959
+          },
+          "0163_SUSHISWAP_V2_UNI/ETH": {
+            "reserve0": 3033.4611486262334,
+            "reserve1": 5.712243627749704
+          },
+          "0164_SUSHISWAP_V2_LINK/ETH": {
+            "reserve0": 1194.4246576626974,
+            "reserve1": 5.55255756763686
+          },
+          "0165_SUSHISWAP_V2_ETH/GRT": {
+            "reserve0": 5.233762289185849,
+            "reserve1": 462626.7738106763
+          },
+          "0166_SUSHISWAP_V2_RARE/ETH": {
+            "reserve0": 680086.7947820398,
+            "reserve1": 5.212982294902172
+          },
+          "0167_SUSHISWAP_V2_OCEAN/ETH": {
+            "reserve0": 68779.66119544252,
+            "reserve1": 5.165817099719092
+          },
+          "0168_SUSHISWAP_V2_DAI/WSTETH": {
+            "reserve0": 8222.828856797149,
+            "reserve1": 4.162076918498104
+          },
+          "0169_SUSHISWAP_V2_POND/ETH": {
+            "reserve0": 7563945.492577895,
+            "reserve1": 4.9490465138755475
+          },
+          "0170_SUSHISWAP_V2_NEWO/USDC": {
+            "reserve0": 26542450.89344716,
+            "reserve1": 8101.660709
+          },
+          "0171_SUSHISWAP_V2_ETH/QTO": {
+            "reserve0": 4.775499747536315,
+            "reserve1": 68942.80155184073
+          },
+          "0172_SUSHISWAP_V2_ETH/WNCG": {
+            "reserve0": 4.340857708946084,
+            "reserve1": 1378602.6064749372
+          },
+          "0173_SUSHISWAP_V2_OHM/ETH": {
+            "reserve0": 201.28822728451158,
+            "reserve1": 2.7144765593851417
+          }
+        },
+        "gas": {
+          "source_row_index": 172,
+          "gas_price_gwei": 1.74932835,
+          "gas_used": 174193.0,
+          "eth_usd": 1590.44,
+          "gas_cost_usd": 0.484640074833204
+        }
+      },
+      "loaded_pool_count": 174,
+      "structural_path_count": 114,
+      "participating_pool_count": 24,
+      "observation_dim": 355,
+      "dataset_mode": "legacy_symbol_collapsed_2026_06_27",
+      "legacy_symbol_collision_audit": {
+        "colliding_symbols": [
+          "OHM",
+          "WOJAK"
+        ],
+        "colliding_symbol_count": 2,
+        "contract_discontinuous_path_count": 8,
+        "contract_continuous_path_count": 106
+      }
+    }
+  ]
+}

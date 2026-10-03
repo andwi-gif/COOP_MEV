@@ -1,0 +1,16 @@
+test_01_source_definitions_and_inputs_unchanged (__main__.RuntimeTests) ... ok
+test_02_original_vs_port_all_23_settings (__main__.RuntimeTests) ... Comparing original: 23 settings at seed 30, plus seeds 31/32.
+Comparing port: 23 settings at seed 30, plus seeds 31/32.
+Exact parity: 276 decisions, matching actions/observations/rewards/wallet/reserves/gas. SHA256 9ba7762c20ea6a52d9688bcca033033d3ff658332577dd03d08fa840ebce1cdf
+ok
+test_03_rejection_does_not_mutate_or_stop_at_200 (__main__.RuntimeTests) ... ok
+test_04_accepted_swaps_and_c1_rejection (__main__.RuntimeTests) ... ok
+test_05_real_c6 (__main__.RuntimeTests) ... Real C6 smoke: {"profit_usd": 2903.6255548226877, "decision_attempts": 792, "executed_transactions": 10, "terminal_condition": "C6_wall_clock_budget_exhausted"}
+ok
+test_06_bad_inputs_and_no_result_overwrite (__main__.RuntimeTests) ... ok
+test_07_global_economic_stop_rules (__main__.RuntimeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 31.905s
+
+OK

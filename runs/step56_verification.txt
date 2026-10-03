@@ -1,0 +1,71 @@
+test_partial_malformed_and_tool_events_are_not_successes (test_codex_plans.AuditTests) ... ok
+test_reasoning_secrets_and_errors_never_persist (test_codex_plans.AuditTests) ... ok
+test_turns_tokens_and_invocations_are_not_actual_requests (test_codex_plans.AuditTests) ... ok
+test_cli_reports_block_without_secrets (test_codex_plans.FileTests) ... ok
+test_duplicate_keys_bare_plans_and_nonfinite_json_rejected (test_codex_plans.FileTests) ... ok
+test_final_always_fails_closed_no_self_asserted_budget (test_codex_plans.FileTests) ... ok
+test_missing_accounting_is_unknown_not_zero_or_one (test_codex_plans.FileTests) ... ok
+test_mock_cli_probes_fresh_home_sanitized_environment_and_no_model_dispatch (test_codex_plans.FileTests) ... ok
+test_output_escape_and_symlink_redirect_rejected (test_codex_plans.FileTests) ... ok
+test_probe_failure_timeout_and_missing_cli_remain_audited_and_blocked (test_codex_plans.FileTests) ... ok
+test_provenance_tampering_and_false_certification_rejected (test_codex_plans.FileTests) ... ok
+test_save_load_public_hash_binding_and_no_overwrite (test_codex_plans.FileTests) ... ok
+test_descriptor_types_route_coverage_and_pool_consistency (test_codex_plans.PublicInputTests) ... ok
+test_prepare_is_pure_deterministic_and_agent_specific (test_codex_plans.PublicInputTests) ... ok
+test_private_input_cannot_hide_under_nested_unknown_fields (test_codex_plans.PublicInputTests) ... ok
+test_avoidance_precedes_plan_and_keeps_fallback (test_codex_plans.RankingTests) ... ok
+test_candidates_require_valid_routes_and_fractions_without_repair (test_codex_plans.RankingTests) ... ok
+test_no_codex_ablation_uses_same_avoidance (test_codex_plans.RankingTests) ... ok
+test_plan_changes_route_and_keeps_route_specific_fraction_amount (test_codex_plans.RankingTests) ... ok
+test_ties_and_unlisted_routes_keep_input_ppo_order (test_codex_plans.RankingTests) ... ok
+test_agent_and_path_count_are_strict (test_codex_plans.ValidationTests) ... ok
+test_bad_plan_shapes_types_ranges_and_extra_fields (test_codex_plans.ValidationTests) ... ok
+test_plain_schema_and_detached_result (test_codex_plans.ValidationTests) ... ok
+test_plan_validation_is_not_llm_or_economic_grading (test_codex_plans.ValidationTests) ... ok
+test_schema_is_fresh_agent_specific_and_closed (test_codex_plans.ValidationTests) ... ok
+test_checker_mismatch_is_fatal (test_coopmev_arena.ArenaTests) ... ok
+test_diagnostic_quotes_do_not_prevent_commit_before_c6 (test_coopmev_arena.ArenaTests) ... ok
+test_matched_states_and_message_ablation (test_coopmev_arena.ArenaTests) ... ok
+test_message_validation (test_coopmev_arena.ArenaTests) ... ok
+test_rejections_do_not_mutate_and_have_no_200_cap (test_coopmev_arena.ArenaTests) ... ok
+test_repeatable_rival_consumes_first (test_coopmev_arena.ArenaTests) ... ok
+test_selection_keeps_path_specific_amount (test_coopmev_arena.ArenaTests) ... ok
+test_public_plan_input_does_not_change_with_development_seed (test_coopmev_arena.FrozenPPOTests) ... ok
+test_top_candidate_matches_original_deterministic_ppo (test_coopmev_arena.FrozenPPOTests) ... ok
+test_balance_limit_missing_start_token_and_exact_balance (test_execution_checker.ExecutionCheckerTests) ... ok
+test_fee_and_gas_exact_rational_known_answer (test_execution_checker.ExecutionCheckerTests) ... ok
+test_finite_inputs_that_overflow_or_underflow_reject_atomically (test_execution_checker.ExecutionCheckerTests) ... ok
+test_gas_alone_can_reject_a_gross_profitable_trade (test_execution_checker.ExecutionCheckerTests) ... ok
+test_invalid_amounts_wallet_balances_prices_gas_and_threshold (test_execution_checker.ExecutionCheckerTests) ... ok
+test_invalid_containers_and_missing_pool_fields (test_execution_checker.ExecutionCheckerTests) ... ok
+test_invalid_path_shapes_tokens_and_repeated_pools (test_execution_checker.ExecutionCheckerTests) ... ok
+test_invalid_pool_reserves_and_fees (test_execution_checker.ExecutionCheckerTests) ... ok
+test_profit_threshold_is_strict_and_net_of_gas (test_execution_checker.ExecutionCheckerTests) ... ok
+test_returned_state_is_deeply_detached_and_calls_are_repeatable (test_execution_checker.ExecutionCheckerTests) ... ok
+test_sequential_trades_use_new_reserves_and_wallet (test_execution_checker.ExecutionCheckerTests) ... ok
+test_third_leg_failure_discards_first_two_staged_swaps (test_execution_checker.ExecutionCheckerTests) ... ok
+test_unprofitable_quotes_have_no_realized_loss_or_gas (test_execution_checker.ExecutionCheckerTests) ... ok
+test_zero_fee_hand_calculated_answer_and_reverse_orientations (test_execution_checker.ExecutionCheckerTests) ... ok
+test_01_source_definitions_and_inputs_unchanged (test_ppo_runtime.RuntimeTests) ... ok
+test_02_original_vs_port_all_23_settings (test_ppo_runtime.RuntimeTests) ... Comparing original: 23 settings at seed 30, plus seeds 31/32.
+Comparing port: 23 settings at seed 30, plus seeds 31/32.
+Exact parity: 276 decisions, matching actions/observations/rewards/wallet/reserves/gas. SHA256 9ba7762c20ea6a52d9688bcca033033d3ff658332577dd03d08fa840ebce1cdf
+ok
+test_03_rejection_does_not_mutate_or_stop_at_200 (test_ppo_runtime.RuntimeTests) ... ok
+test_04_accepted_swaps_and_c1_rejection (test_ppo_runtime.RuntimeTests) ... ok
+test_05_real_c6 (test_ppo_runtime.RuntimeTests) ... FAIL
+test_06_bad_inputs_and_no_result_overwrite (test_ppo_runtime.RuntimeTests) ... ok
+test_07_global_economic_stop_rules (test_ppo_runtime.RuntimeTests) ... ok
+
+======================================================================
+FAIL: test_05_real_c6 (test_ppo_runtime.RuntimeTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT_ROOT>/tests/test_ppo_runtime.py", line 202, in test_05_real_c6
+    self.assertEqual(row["decision_attempts"], row["executed_transactions"]
+AssertionError: 803 != 804
+
+----------------------------------------------------------------------
+Ran 55 tests in 35.281s
+
+FAILED (failures=1)

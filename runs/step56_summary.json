@@ -1,0 +1,96 @@
+{
+  "status": "development_verified_final_not_launched",
+  "test_count": 61,
+  "source_parity_decisions": 276,
+  "dataset_files_identical_to_source": 18,
+  "model_sha256": "1534631a492f8300696df0d6adc32f900272163d5a78db708d57e0ad6655978b",
+  "matched_four_agent_initial_states": true,
+  "development_seed": 30,
+  "final_experiment_launched": false,
+  "slurm_submitted": false,
+  "planner_requested_model": "gpt-6-astra",
+  "cli_attempts": 7,
+  "saved_development_plans": 4,
+  "failed_development_attempts": 3,
+  "actual_model_requests": null,
+  "final_request_budget_accounting": "unresolved; CLI attempts are not actual model request counts",
+  "rows": [
+    {
+      "condition": "B1",
+      "team_profit_usd": 1311.0907632285664,
+      "rival_profit_usd": 1595.5734591908163,
+      "plan_changed_route": 12,
+      "messages_used": 0,
+      "rival_consumed_first": 4,
+      "invalid_committed_trades": 0,
+      "terminal_condition": "global_economic_exhaustion"
+    },
+    {
+      "condition": "B2",
+      "team_profit_usd": 1302.0993065535251,
+      "rival_profit_usd": 1606.6008800325094,
+      "plan_changed_route": 17,
+      "messages_used": 0,
+      "rival_consumed_first": 10,
+      "invalid_committed_trades": 0,
+      "terminal_condition": "global_economic_exhaustion"
+    },
+    {
+      "condition": "B3",
+      "team_profit_usd": 1302.0999464109236,
+      "rival_profit_usd": 1606.600383854006,
+      "plan_changed_route": 17,
+      "messages_used": 0,
+      "rival_consumed_first": 10,
+      "invalid_committed_trades": 0,
+      "terminal_condition": "global_economic_exhaustion"
+    },
+    {
+      "condition": "Proposed",
+      "team_profit_usd": 1302.1035971587721,
+      "rival_profit_usd": 1606.5970199903154,
+      "plan_changed_route": 16,
+      "messages_used": 12,
+      "rival_consumed_first": 10,
+      "invalid_committed_trades": 0,
+      "terminal_condition": "global_economic_exhaustion"
+    },
+    {
+      "condition": "PPO-sharing-no-team-plan",
+      "team_profit_usd": 1365.6204270929336,
+      "rival_profit_usd": 1532.9267538352028,
+      "plan_changed_route": 6,
+      "messages_used": 11,
+      "rival_consumed_first": 9,
+      "invalid_committed_trades": 0,
+      "terminal_condition": "global_economic_exhaustion"
+    }
+  ],
+  "code_sha256": {
+    "codex_plans.py": "321a7bc8b78f845e894f48b75f04ff76054f56efc210bbbed96355417714b8f9",
+    "ppo_runtime.py": "81ffe2e9d39b83baf6494edd6dd82631f88ea856751d8279460dc6211373faf7",
+    "execution_checker.py": "675c5f8e432697b4b19f4949d963b8d29a6e460dd07768d7ae166a6595320573",
+    "ppr01_ablation_driver_v2.09.py": "e96fda5e16ac0a4b4c720c13405d62587dc10868077a8c2b6f23be50cf736f2f",
+    "coopmev_arena.py": "ab7d2b3633def91d9f9a95ca6f99714c506dcd35604362862bf890b02bb0610d"
+  },
+  "dataset_sha256": {
+    "100_POOLS_ETHEREUM_v2_app.uniswap.org_explore_pools_ethereum.mhtml": "1557fade9731532315639226070f9215ee96bb03c80e26caefe8a7a24efad5f3",
+    "wallet_balance_2026-06-27.4000.json": "a58625f6b0bee3708c7bd86dd015cfea9fbdde1c68a999825f04abc0ee36c200",
+    "uniswap_v2_and_sushiswap_v2_pools_data_generator.py": "62d60e175c8a1bbf2ad4fbaf9926a135eed04ab8e85a953e9900fc954c56619c",
+    "uniswap_v2_and_sushiswap_v2_pools_data.2026-06-27.json": "c623e07836c48b429281ce92bfa1e797ee01f6c372506c70ec059e50dece26da",
+    "wallet_balance_2026-06-27.8000.json": "f34f66f5b68eea95fb0d90e794565b7b6e57003bbc7eb220d80688a80a8ee558",
+    "wallet_balance_2026-06-27.2000.json": "0ee9f1e272ad76e3170a732caf77a4c77a7c175f9f4377f80662d0937f7b3d93",
+    "wallet_balance_2026-06-27.6000.json": "a717a69588a6bd71986a70d7f62224e968f16aceea475357e8041071de27b395",
+    "token_prices_2026-06-27.json": "d237efacf883ef20622c9cc08aeb6433ff525aa663cc1698d2e0109d37d3bd37",
+    "token_price_generator.py": "082f67cf996035c1dee01aedef6c540259d3970b1915dbd0d812ebd5da4ee67a",
+    "wallet_balance_generator_1K_10K.py": "5c47d2dc237cd6d777a049e98bb4b64cf328cf0a6f3cef31328f12f5885c2f07",
+    "100_POOLS_ALL_v2_sushi.com_ethereum_explore_pools_Pools _ Sushi.mhtml": "06c2d2dd7560815b38835420f28b8030e8754568d3d5e6796d950f6d19043ebd",
+    "wallet_balance_2026-06-27.9000.json": "25eab56a91c49b57a3654f78de50926c9127edbf5f31f8300fc424552f785cb4",
+    "wallet_balance_2026-06-27.1000.json": "5f9240938742fb0efff659e0e325896f4ea3bf12742a1d81de29f7e797a02f78",
+    "wallet_balance_2026-06-27.5000.json": "cb4e0be33c3975f9089248b269298098c35b1dc15027f89e9f42ca4845e79eb8",
+    "Book1.xlsx": "babe107325838406bd60c0e873588f4c79403977f47e0db8f2358f0ade34bbe0",
+    "wallet_balance_2026-06-27.3000.json": "652c49979ea52f464a7e57cc4bd0e8fc58cbf04c9a32435f541b1de77bff7add",
+    "wallet_balance_2026-06-27.10000.json": "b8f62a5016083ebc44ae85071bba05dbede8e3a8496fef41948d531f9b1ab4dd",
+    "wallet_balance_2026-06-27.7000.json": "647696b7c28a14439eeca33e970fa4344341d2e1130ae85175e53a6d18bc982f"
+  }
+}
