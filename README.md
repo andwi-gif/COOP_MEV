@@ -111,6 +111,7 @@ git clone https://github.com/andwi-gif/C723_COOPMEV.git
 cd C723_COOPMEV
 conda env create -f environment.yml
 conda activate coopmev-lite
+python -m pip install -r requirements.txt
 
 # Install PyTorch using the build appropriate for the machine/HPC.
 # Example generic pip installation; use the HPC-supported CUDA command if required.
